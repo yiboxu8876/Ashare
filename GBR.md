@@ -23,3 +23,9 @@ for /d %d in (*) do (
 ```
 py -3.12 collect_predictions.py
 ```
+```
+Remove-Item Env:HTTP_PROXY -ErrorAction SilentlyContinue
+Remove-Item Env:HTTPS_PROXY -ErrorAction SilentlyContinue
+Remove-Item Env:http_proxy -ErrorAction SilentlyContinue
+Remove-Item Env:https_proxy -ErrorAction SilentlyContinue
+```
